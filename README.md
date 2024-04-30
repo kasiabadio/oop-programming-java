@@ -13,8 +13,11 @@ These are my solutions of course on Coursera "Object Oriented Programming in Jav
 
 ## 3. Functionalities
 * Java Programming: Solving Problems with Software
-    - 1. First exercise was to perform some calculations on a strand of DNA, such as calculate non-overlapping number of genes, calculating number of "CTG" codons. I also got number of strings which length was > 60 and ratio of C and G in genes.
-    - 2. Second exercise was about working with CSV files, comparing values and returning maximum, minimum or average values.
+    - 1. First exercise was to perform some calculations on a strand of DNA, such as calculate non-overlapping number of genes, calculating number of "CTG" codons. I also got number of strings which length was > 60 and ratio of C and G in genes. Project folders: StringsFirstAssingments, StringsSecondAssignments, StringsThirdAssignments.
+
+    - 2. Second exercise was about working with CSV files, comparing values and returning maximum, minimum or average values. There was mostly weather data. Project folders: ParsingExportData, ParsingWeatherData.
+
+    - 3. Third exercise was also about working with CSV files, working with DirectoryResource and FileResource. Project folder: BabiesNames.
 
 ## 4. Technologies
 * Java
