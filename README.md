@@ -18,6 +18,8 @@ These are my solutions of course on Coursera "Object Oriented Programming in Jav
     - 2. Second exercise was about working with CSV files, comparing values and returning maximum, minimum or average values. There was mostly weather data. Project folders: ParsingExportData, ParsingWeatherData.
 
     - 3. Third exercise was also about working with CSV files, working with DirectoryResource and FileResource. Project folder: BabiesNames.
+    
+    - 4. Fourth exercise was about converting images to grayscale and inverting colors. Project folders: BatchGrayscaleImages, ImageInversion.
 
 ## 4. Technologies
 * Java
