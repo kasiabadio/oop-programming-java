@@ -58,7 +58,7 @@ public class CaesarBreaker {
         String messageTwo = "";
         for (int i = 0; i < encrypted.length(); i++){
             if (i % 2 == 0){
-                messageOne += encrypted.charAt(i);;
+                messageOne += encrypted.charAt(i);
             } else if (i % 2 != 0){
                 messageTwo += encrypted.charAt(i);
             }

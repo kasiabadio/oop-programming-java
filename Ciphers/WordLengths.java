@@ -11,11 +11,17 @@ public class WordLengths {
     public void countWordLengths(FileResource resource, int[] counts){
         for (String word: resource.words()){
             word = word.toLowerCase();
-            if (Character.isLetter(word.charAt(word.length() - 1)) == false){
-                word = word.substring(0, word.length() - 1);
-            }
-            if (Character.isLetter(word.charAt(0)) == false){
-                word = word.substring(1, word.length());
+            System.out.println(word);
+            if (word.length() > 0){
+                if (Character.isLetter(word.charAt(word.length() - 1)) == false){
+                    word = word.substring(0, word.length() - 1);
+                }
+                
+                if (word.length() > 0){
+                    if (Character.isLetter(word.charAt(0)) == false){
+                        word = word.substring(1, word.length());
+                    }
+                }
             }
             
             int length = word.length();
