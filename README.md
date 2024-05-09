@@ -25,6 +25,8 @@ These are my solutions of course on Coursera "Object Oriented Programming in Jav
     - 1. First exercise was about implementing the Caesar Cipher, with one key and two keys and breaking it. To break it, it was checked what was the distance of the index in the alphabet of most frequent letter to the letter 'e', which is most frequent in English alphabet. The shift in the alphabet was calculated and cipher was broken. Then, the same method was used to break the cipher with two keys. There was also decryption with two keys. Project folder: Ciphers.
 
     - 2. Second exercise was about making Cipher object-oriented. Project folder: CiphersOOP.
+
+    - 3. Third exercise was about counting unique words frequencies and counting how many times Character occured in play. Project folder: WordFrequencies.
     
 ## 4. Technologies
 * Java
