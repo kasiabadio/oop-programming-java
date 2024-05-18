@@ -31,6 +31,8 @@ These are my solutions of course on Coursera "Object Oriented Programming in Jav
     - 4. Fourth exercise was about making stories with some random words. I used ArrayList for these lists of words. Next, HashMap was introduced. Project folder: GladLib.
 
     - 5. Exercise was about using HashMaps for GladLib, checking in which files a word occured and counting occurrences of codons in DNA. Project folders: GlabLib, DNA.
+
+    - 6. Task was about parsing logs and extracting information. ArrayLists and HashMaps are used. Project folder: LogsAndIPs.
     
 ## 4. Technologies
 * Java
