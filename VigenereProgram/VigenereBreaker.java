@@ -7,7 +7,7 @@ import edu.duke.*;
  * Write a description of VigenereBreaker here.
  * 
  * @author Katarzyna Badio
- * @version 1.0.0
+ * @version 1.0.1
  */
 
 public class VigenereBreaker {
@@ -31,22 +31,25 @@ public class VigenereBreaker {
     }
 
     public void breakVigenere () {
-        FileResource fr1 = new FileResource();
-        HashSet<String> words = readDictionary(fr1);
         
-        FileResource fr2 = new FileResource();
-        String contents2 = "";
-        for (String line: fr2.lines()){
-            contents2 += line + " ";
+        FileResource fr = new FileResource();
+        String contents = "";
+        for (String line: fr.lines()){
+            contents += line + " ";
         }
-        String decrypted2 = breakForLanguage(contents2, words);
         
-        System.out.println("Decrypted: ");
-        if (decrypted2.length() < 100){
-            System.out.println(decrypted2);
-        } else {
-            System.out.println(decrypted2.substring(0, 100));
+        String[] dictionaries = {"Danish", "Dutch", "English", "French", 
+            "German", "Italian", "Portugese", "Spanish"};
+        HashMap<String, HashSet<String>> languages = new HashMap<String, HashSet<String>>();
+        for (int i = 0; i < dictionaries.length; i++){
+            System.out.println("Dictionary language: " + dictionaries[i]);
+            FileResource fr1 = new FileResource();
+            HashSet<String> words = readDictionary(fr1);
+            languages.put(dictionaries[i], words);
         }
+        
+        breakForAllLangs(contents, languages);
+    
     }
     
     public HashSet<String> readDictionary(FileResource fr){
@@ -75,7 +78,8 @@ public class VigenereBreaker {
         int maxNumWords = -1;
         int maxKeysLength = -1;
         for (int i = 0; i < 100; i++){
-            int[] keys = tryKeyLength(encrypted, i, 'e');
+            char c = mostCommonCharIn(dictionary);
+            int[] keys = tryKeyLength(encrypted, i, c);
             if (keys.length > 0){
                 VigenereCipher vc = new VigenereCipher(keys);
                 String decrypted = vc.decrypt(encrypted);
@@ -92,4 +96,53 @@ public class VigenereBreaker {
         System.out.println("Valid words: " + maxNumWords);
         return dec;
     }
+    
+    public char mostCommonCharIn(HashSet<String> dictionary){
+        HashMap<Character, Integer> countsChar = new HashMap<Character, Integer>();
+        for (String val: dictionary){
+            for (int i = 0; i < val.length(); i++){
+                char c = val.charAt(i);
+                if (!countsChar.containsKey(c)){
+                    countsChar.put(c, 1);
+                } else {
+                    countsChar.put(c, countsChar.get(c) + 1);
+                }
+            }
+        }
+        
+        char mostFrequent = '-';
+        int countMostFrequent = -1;
+        for (char key: countsChar.keySet()){
+            int c = countsChar.get(key);
+            if (c > countMostFrequent){
+                countMostFrequent = c;
+                mostFrequent = key;
+            }
+        }
+        return mostFrequent;
+    }
+    
+    public void breakForAllLangs(String encrypted, HashMap<String, HashSet<String>> languages){
+        String d = "";
+        int maxNumOfWords = -1;
+        String l = "";
+        for (String key: languages.keySet()){
+            System.out.println("Language: " + key);
+            HashSet<String> words = languages.get(key);
+            String decrypted = breakForLanguage(encrypted, words);
+            int numOfWords = countWords(decrypted, words);
+            if (maxNumOfWords < numOfWords){
+                maxNumOfWords = numOfWords;
+                d = decrypted;
+                l = key;
+            }
+        }
+        if (d.length() < 100){
+            System.out.println(d);
+        } else {
+            System.out.println(d.substring(0, 100));
+        }
+        System.out.println("Language: " + l);
+    }
+    
 }

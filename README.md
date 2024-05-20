@@ -34,7 +34,7 @@ These are my solutions of course on Coursera "Object Oriented Programming in Jav
 
     - 6. Task was about parsing logs and extracting information. ArrayLists and HashMaps are used. Project folder: LogsAndIPs.
 
-    - 7. In seventh task I have implemented Vigenere Cipher breaker. It takes a dictionary of words and tries different key lengths, finds a text with most matching words to a dictionary of words in selected language. Project folder: VigenereProgram.
+    - 7. In seventh task I have implemented Vigenere Cipher breaker. It takes a dictionary of words and tries different key lengths, finds a text with most matching words to a dictionary of words in selected language. Extension of a program was about guessing a language and key length of an encrypted message. Project folder: VigenereProgram.
     
 ## 4. Technologies
 * Java
