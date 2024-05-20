@@ -33,6 +33,8 @@ These are my solutions of course on Coursera "Object Oriented Programming in Jav
     - 5. Exercise was about using HashMaps for GladLib, checking in which files a word occured and counting occurrences of codons in DNA. Project folders: GlabLib, DNA.
 
     - 6. Task was about parsing logs and extracting information. ArrayLists and HashMaps are used. Project folder: LogsAndIPs.
+
+    - 7. In seventh task I have implemented Vigenere Cipher breaker. It takes a dictionary of words and tries different key lengths, finds a text with most matching words to a dictionary of words in selected language. Project folder: VigenereProgram.
     
 ## 4. Technologies
 * Java
