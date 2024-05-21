@@ -36,6 +36,9 @@ These are my solutions of course on Coursera "Object Oriented Programming in Jav
 
     - 7. In seventh task I have implemented Vigenere Cipher breaker. It takes a dictionary of words and tries different key lengths, finds a text with most matching words to a dictionary of words in selected language. Extension of a program was about guessing a language and key length of an encrypted message. Project folder: VigenereProgram.
     
+* Object Oriented Programming in Java
+    1. First exercise was about displaying map of a current location in a window. Project folder: UCSDUnfoldingMaps/src/module1.
+
 ## 4. Technologies
 * Java
 * BlueJ
