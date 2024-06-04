@@ -39,6 +39,8 @@ These are my solutions of course on Coursera "Object Oriented Programming in Jav
 * Object Oriented Programming in Java
     - 1. First exercise was about displaying map of a current location in a window. Project folder: UCSDUnfoldingMaps/src/module1.
 
+    - 2. In second exercise I have followed the instructions in the course and displayed points of earthquakes around the world. I have also colored the map according to the life expectancy averages.
+
 ## 4. Technologies
 * Java
 * BlueJ
