@@ -43,6 +43,10 @@ These are my solutions of course on Coursera "Object Oriented Programming in Jav
 
     - 3. In the third exercise I have displayed a legend for the points of earthquakes. Project folder: UCSDUnfoldingMaps/src/module3.
 
+    - 4. Fourth exercise was about displaying a legend for points of earthquakes and different colors depending on a scale. Project folder: UCSDUnfoldingMaps/src/module4.
+
+    - 5. Fifth exercise was about displaying information about cities and earthquakes when hovering mouse over these points. Project folder: UCSDUnflodingMaps/src/module5.
+
 ## 4. Technologies
 * Java
 * BlueJ
