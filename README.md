@@ -47,6 +47,8 @@ These are my solutions of course on Coursera "Object Oriented Programming in Jav
 
     - 5. Fifth exercise was about displaying information about cities and earthquakes when hovering mouse over these points. Project folder: UCSDUnflodingMaps/src/module5.
 
+    - 6. This exercise was about sorting earthquakes in reverse order using built-in java sort method. Project foldrr: USCDUnfoldingMaps/src/module6.
+
 ## 4. Technologies
 * Java
 * BlueJ
