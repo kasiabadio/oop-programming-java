@@ -51,7 +51,4 @@ These are my solutions of course on Coursera "Object Oriented Programming in Jav
 
 ## 4. Technologies
 * Java
-* BlueJ
 
-## 5. Setup
-You must have BlueJ programming environment installed.
